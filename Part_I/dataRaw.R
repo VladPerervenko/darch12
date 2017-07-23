@@ -16,7 +16,7 @@ library(PerformanceAnalytics)
 library(DMwR2)
 library(Rlof)
 ##-----Function--------------------------------
-#source('C:/RData/Project/DARCH12/FUNCTION.R')
+#source('C:/RData/Project/DARCH12/Part_I/FUNCTION.R')
 
 ##-----Cotir---------------------------------------
 evalq({pr <- pr.OHLCV(Data, Open, High, Low, Close, Volume)
