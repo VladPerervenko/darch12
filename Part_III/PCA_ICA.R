@@ -28,5 +28,4 @@ evalq(all_equal(pca, pca1), env)
 # [1] TRUE
 evalq(all_equal(ica, ica1), env)
 # [1] TRUE
-##=======Autoencoder===================
-#-----4--------
+##=======END===================

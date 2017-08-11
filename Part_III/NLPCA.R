@@ -68,11 +68,11 @@ evalq(
   pcTrainNN <- NLpca@scores %>% tbl_df %>% 
     cbind(., Class = DTcap.n$train$Class)
   , env)
-#-------------
+#-----graph--------
 require(GGally)
 evalq({
   ggpairs(pcTrainNN,columns = 1:ncol(pcTrainNN), 
           mapping = aes(color = Class),
           title = "pcTrainNN -> nlpca(3, 7, 12) wd=0.01")}, 
   env)
-#------------------------------
+##=============END=======================

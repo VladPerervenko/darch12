@@ -1,4 +1,5 @@
 #========BPCA==============================
+require(pcaMethods)
 evalq(
   resBPCA <- pca(train, method = "bpca",
                  center = TRUE, scale = "none",# c("none", "pareto", "vector", "uv")

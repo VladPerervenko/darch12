@@ -1,4 +1,5 @@
 #=======PPCA===================
+require(pcaMethods)
 evalq({
   DTcap.n$train %>% tbl_df %>%
     select(-Class) %>% as.matrix() -> train
@@ -46,3 +47,4 @@ evalq({
           mapping = aes(color = Class),
           title = "ppcaTest ")}, 
   env)
+##===============END=========================
