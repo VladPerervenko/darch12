@@ -1,0 +1,105 @@
+darch(x, y, 
+  layers = 10, ...,
+  paramsList = list(),
+  darch = NULL,
+  darch.isClass = T,
+  shuffleTrainData = T,
+  seed = NULL,
+  logLevel = NULL,
+#===================================
+  ## params PreProcess::caret
+  preProc.params = F,
+  preProc.factorToNumeric = F, 
+  preProc.factorToNumeric.targets = F,
+  preProc.fullRank = T, 
+  preProc.fullRank.targets = F,
+  preProc.orderedToFactor.targets = T, 
+  preProc.targets = F,   
+   #--params bootstrap
+  bootstrap = F, 
+  bootstrap.unique = T,
+  bootstrap.num = 0, 
+  
+  ##-----------------
+  cg.length = 2, 
+  cg.switchLayers = 1, 
+#===================================    
+  ## params NN 
+  darch.batchSize = 1,   
+  darch.numEpochs = 100, 
+  darch.returnBestModel = T,
+  darch.returnBestModel.validationErrorFactor = 1 - exp(-1),
+  darch.stopClassErr = -Inf, 
+  darch.stopErr = -Inf,
+  darch.stopValidClassErr = -Inf, 
+  darch.stopValidErr = -Inf,
+  darch.trainLayers = T, 
+  darch.unitFunction = sigmoidUnit,
+  darch.elu.alpha = 1,
+  darch.errorFunction = if (darch.isClass) crossEntropyError else mseError,
+   #--weight 
+  generateWeightsFunction = generateWeightsGlorotUniform,
+  darch.weightDecay = 0,
+  darch.weightUpdateFunction = weightDecayWeightUpdate, 
+  weights.max = 0.1,
+  weights.mean = 0, 
+  weights.min = -0.1, 
+  weights.sd = 0.01,
+   #--momentum
+  darch.finalMomentum = 0.9,
+  darch.initialMomentum = 0.5,
+  darch.momentumRampLength = 1,
+  darch.nesterovMomentum = T,
+   #--params regularization
+  darch.dither = F, 
+  darch.dropout = 0,
+  darch.dropout.dropConnect = F, 
+  darch.dropout.momentMatching = 0,
+  darch.dropout.oneMaskPerEpoch = F,
+  darch.maxout.poolSize = 2, 
+  darch.maxout.unitFunction = linearUnit, 
+  normalizeWeights = F,
+  normalizeWeightsBound = 15,
+   ## fineTuneFunction
+  darch.fineTuneFunction = backpropagation,  
+   # params BP
+  bp.learnRate = 1,
+  bp.learnRateScale = 1, 
+   # params RPROP
+  rprop.decFact = 0.5, 
+  rprop.incFact = 1.2, 
+  rprop.initDelta = 1/80,
+  rprop.maxDelta = 50, 
+  rprop.method = "iRprop+", 
+  rprop.minDelta = 1e-06,  
+#===========================================  
+  # params RBM
+  rbm.numEpochs = 0,
+  rbm.allData = F, 
+  rbm.batchSize = 1,
+  rbm.consecutive = T, 
+  rbm.errorFunction = mseError,
+  rbm.finalMomentum = 0.9, 
+  rbm.initialMomentum = 0.5,
+  rbm.momentumRampLength = 1,  
+  rbm.lastLayer = 0,
+  rbm.learnRate = 1, 
+  rbm.learnRateScale = 1, 
+  rbm.numCD = 1, 
+  rbm.unitFunction = sigmoidUnitRbm,
+  rbm.updateFunction = rbmUpdate, 
+  rbm.weightDecay = 2e-04, 
+#============================================    
+  ## params autosave  
+  autosave = F,
+  autosave.epochs = round(darch.numEpochs/20),
+  autosave.dir = "./darch.autosave", autosave.trim = F,
+  retainData = F,
+  ##--GPU---------
+  gputools = F,
+  gputools.deviceId = 0,  
+  ##-------------
+  dataSet = NULL,
+  dataSetValid = NULL,  
+  xValid = NULL, 
+  yValid = NULL)

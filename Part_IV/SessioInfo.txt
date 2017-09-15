@@ -1,0 +1,40 @@
+> sessionInfo()
+R version 3.4.0 (2017-04-21)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 7 x64 (build 7601) Service Pack 1
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252   
+[3] LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] magrittr_1.5         dplyr_0.5.0          darch_0.12.0         RDocumentation_0.8.0
+[5] RevoUtilsMath_10.0.0
+
+loaded via a namespace (and not attached):
+ [1] RevoUtils_10.0.4     reshape2_1.4.2       splines_3.4.0       
+ [4] lattice_0.20-35      colorspace_1.3-2     stats4_3.4.0        
+ [7] mgcv_1.8-17          e1071_1.6-8          ModelMetrics_1.1.0  
+[10] nloptr_1.0.4         withr_1.0.2          DBI_0.6-1           
+[13] lambda.r_1.1.9       foreach_1.4.3        plyr_1.8.4          
+[16] stringr_1.2.0        MatrixModels_0.4-1   munsell_0.4.3       
+[19] gtable_0.2.0         futile.logger_1.4.3  devtools_1.12.0     
+[22] codetools_0.2-15     memoise_1.1.0        labeling_0.3        
+[25] SparseM_1.77         caret_6.0-76         class_7.3-14        
+[28] quantreg_5.33        pbkrtest_0.4-7       curl_2.6            
+[31] parallel_3.4.0       NeuralNetTools_1.5.0 proto_1.0.0         
+[34] Rcpp_0.12.10         scales_0.4.1         jsonlite_1.4        
+[37] lme4_1.1-13          rjson_0.2.15         ggplot2_2.2.1       
+[40] digest_0.6.12        stringi_1.1.5        grid_3.4.0          
+[43] tools_3.4.0          lazyeval_0.2.0       tibble_1.3.0        
+[46] futile.options_1.0.0 tidyr_0.6.1          car_2.1-4           
+[49] githubinstall_0.2.1  MASS_7.3-47          Matrix_1.2-10       
+[52] data.table_1.10.4    assertthat_0.2.0     minqa_1.2.4         
+[55] httr_1.2.1           iterators_1.0.8      R6_2.2.0            
+[58] nnet_7.3-12          nlme_3.1-131         compiler_3.4.0 
