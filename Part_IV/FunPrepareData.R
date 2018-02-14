@@ -95,7 +95,7 @@ require(TTR)
 	##-----Cotir---------------------------------------
 	pr <- pr.OHLCV(Data, Open, High, Low, Close, Volume)
 		   #rm(list = c("Data", "Open", "High", "Low", "Close", "Volume"))
-	#------------
+	#------dopCotir------
 	pr %<>% mutate(.,
 					Med = (High + Low)/2,
 					Typ = (High + Low + Close)/3,
@@ -131,8 +131,7 @@ require(TTR)
 					v.rbci = c(NA, diff(rbci)),
 					v.pcci = c(NA, diff(pcci))#,v.fars = c(NA, diff(fars))
 	)
-	#------target---------------------
-	#--------ZigZag-----
+	#------target--ZigZag-------------------
 	pr %<>% cbind(., zigz = ZZ(., par = par))
 	pr %<>% cbind(., dz = diff(pr$zigz) %>% c(NA, .)) # not shift!
 	pr %<>% cbind(., sig = sign(pr$dz))
@@ -145,16 +144,17 @@ require(TTR)
 					  dplyr::select(-sig) %>% na.omit
 	
 }
-##---5---------------------------------------------
+##---5--SplitData-------------------------------------------
 SplitData <- function(x, pretrain, train, val, test, start = 1){
-   pretr <- start:pretrain
-   tr <- pretrain:(pretrain + train)
-   v <- (pretrain + train):(pretrain + train + val)
-   ts <- (pretrain + train + val):(pretrain + train + val + test)
-   DT <- list()
-   list(pretrain = x[pretr, ], train = x[tr, ], val = x[v, ],
-   test = x[ts, ]) -> DT
-   return(DT)
+  end <- pretrain + start
+  pretr <- start:end
+  tr <- end:(end + train)
+  v <- (end + train):(end + train + val)
+  ts <- (end + train + val):(end + train + val + test)
+  DT <- list()
+  list(pretrain = x[pretr, ], train = x[tr, ], val = x[v, ],
+       test = x[ts, ]) -> DT
+  return(DT)
 }
 #==============OUTLIER========================================
 #---6--par.outlier--------------
