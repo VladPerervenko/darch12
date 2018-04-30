@@ -1,0 +1,56 @@
+> sessionInfo()
+R version 3.4.4 (2018-03-15)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 7 x64 (build 7601) Service Pack 1
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252   
+[3] LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] reticulate_1.6.0.9002 keras_2.1.5           dplyr_0.7.4           varbvs_2.4-0         
+ [5] TTR_0.23-3            anytime_0.3.0         wrapr_1.4.0           doParallel_1.0.11    
+ [9] iterators_1.0.9       doRNG_1.6.6           rngtools_1.2.4        pkgmaker_0.22        
+[13] registry_0.5          foreach_1.4.4         elmNN_1.0             MASS_7.3-49          
+[17] magrittr_1.5         
+
+loaded via a namespace (and not attached):
+  [1] plyr_1.8.4                igraph_1.2.1              lazyeval_0.2.1            adabag_4.2               
+  [5] splines_3.4.4             crosstalk_1.0.0           tfruns_1.3                ggplot2_2.2.1            
+  [9] TH.data_1.0-8             digest_0.6.15             htmltools_0.3.6           memoise_1.1.0            
+ [13] cluster_2.0.7             sfsmisc_1.1-2             recipes_0.1.2             gower_0.1.2              
+ [17] dimRed_0.1.0              xts_0.10-2                sandwich_2.4-0            strucchange_1.5-1        
+ [21] colorspace_1.3-2          blob_1.1.1                tcltk_3.4.4               jsonlite_1.5             
+ [25] libcoin_1.0-1             bindr_0.1.1               rowr_1.1.3                zeallot_0.1.0            
+ [29] survival_2.41-3           zoo_1.8-1                 glue_1.2.0                DRR_0.0.3                
+ [33] smbinning_0.6             gtable_0.2.0              ipred_0.9-6               R2HTML_2.3.2             
+ [37] kernlab_0.9-25            ddalpha_1.3.1.1           DEoptimR_1.0-8            scales_0.5.0             
+ [41] mvtnorm_1.0-7             DBI_0.8                   miniUI_0.1.1              Rcpp_0.12.16             
+ [45] plotrix_3.7               xtable_1.8-2              Cubist_0.2.1              foreign_0.8-69           
+ [49] bit_1.1-12                mefa_3.2-7                Formula_1.2-2             sqldf_0.4-11             
+ [53] stats4_3.4.4              lava_1.6.1                prodlim_1.6.1             glmnet_2.0-16            
+ [57] htmlwidgets_1.2           RColorBrewer_1.1-2        modeltools_0.2-21         pkgconfig_2.0.1          
+ [61] nnet_7.3-12               caret_6.0-79              tidyselect_0.2.4          rlang_0.2.0              
+ [65] manipulateWidget_0.9.0    reshape2_1.4.3            munsell_0.4.3             tools_3.4.4              
+ [69] xgboost_0.6.4.1           party_1.2-4               gsubfn_0.7                RSQLite_2.1.0            
+ [73] ade4_1.7-10               pls_2.6-0                 broom_0.4.4               randomUniformForest_1.1.5
+ [77] stringr_1.3.0             yaml_2.1.18               kknn_1.3.1                ModelMetrics_1.1.0       
+ [81] knitr_1.20                bit64_0.9-7               robustbase_0.92-8         rgl_0.99.16              
+ [85] purrr_0.2.4               randomForest_4.6-14       bindrcpp_0.2.2            coin_1.2-2               
+ [89] nlme_3.1-131.1            whisker_0.3-2             mime_0.5                  RcppRoll_0.2.2           
+ [93] compiler_3.4.4            curl_3.2                  e1071_1.6-8               tibble_1.4.2             
+ [97] stringi_1.1.7             modeest_2.1               lattice_0.20-35           Matrix_1.2-13            
+[101] tensorflow_1.5            psych_1.8.3.3             pillar_1.2.1              data.table_1.10.4-3      
+[105] httpuv_1.3.6.2            latticeExtra_0.6-28       RApiDatetime_0.0.3        R6_2.2.2                 
+[109] clusterSim_0.47-1         codetools_0.2-15          gtools_3.5.0              rminer_1.4.2             
+[113] assertthat_0.2.0          CVST_0.2-1                chron_2.3-52              proto_1.0.0              
+[117] withr_2.1.2               mnormt_1.5-5              multcomp_1.4-8            grid_3.4.4               
+[121] rpart_4.1-13              timeDate_3043.102         tidyr_0.8.0               class_7.3-14             
+[125] inum_1.0-0                mda_0.4-10                pROC_1.11.0               partykit_1.2-0           
+[129] shiny_1.0.5               lubridate_1.7.3           base64enc_0.1-3 
