@@ -33,3 +33,5 @@ PartIV - [Deep Neural Networks (Part IV). Creating, training and testing a model
 
 PartV - [Deep Neural Networks (Part V). Bayesian optimization of DNN hyperparameters](https://www.mql5.com/en/articles/4225)
 
+PartVI - [Deep Neural Networks (Part VI). Ensemble of neural network classifiers: bagging](https://www.mql5.com/en/articles/4227)
+
