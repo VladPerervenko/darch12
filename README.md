@@ -35,3 +35,7 @@ PartV - [Deep Neural Networks (Part V). Bayesian optimization of DNN hyperparame
 
 PartVI - [Deep Neural Networks (Part VI). Ensemble of neural network classifiers: bagging](https://www.mql5.com/en/articles/4227)
 
+PartVII - [Deep Neural Networks (Part VII). Ensemble of neural networks: stacking](https://www.mql5.com/en/articles/4228)
+
+PartVIII - [Deep Neural Networks (Part VIII). Increasing the classification quality of bagging ensembles ](https://www.mql5.com/en/articles/4722)
+
